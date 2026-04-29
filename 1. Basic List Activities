@@ -1,0 +1,90 @@
+# Create a list of 3 fruits
+fruits = ["Apple", "Banana", "Orange"]
+
+# Print the list
+print(fruits)
+# Output: ['Apple', 'Banana', 'Orange']
+
+fruits = ["apple", "banana", "cherry"]
+
+print(fruits[0])   # apple  → first item
+print(fruits[-1])  # cherry → last item
+
+colors = ["red", "blue", "green", "yellow"]
+
+print(len(colors))
+# Output: 4
+Task: Replace "banana" with "orange"
+fruits = ["apple", "banana", "cherry"]
+# your code here
+fruits = ["apple", "banana", "cherry"]
+# Replace "banana" with "orange"
+fruits[1] = "orange"
+print(fruits)
+
+fruits = ["apple", "banana"]
+
+fruits.append("mango")     # Adds to the end
+fruits.insert(1, "grape")  # Inserts at index 1
+
+print(fruits)
+# Output: ['apple', 'grape', 'banana', 'mango']
+
+fruits = ["apple", "banana", "cherry"]
+
+fruits.remove("banana")  # Removes by value
+fruits.pop()             # Removes last item
+
+print(fruits)
+# Output: ['apple']
+
+Task: Print each item
+animals = ["dog", "cat", "bird"]
+# your code here
+animals = ["dog", "cat", "bird"]
+# Print each item
+for animal in animals:
+print(animal)
+numbers = [10, 20, 30]
+
+for index, value in enumerate(numbers):
+    print(index, ":", value)
+
+# Output:
+# 0 : 10
+# 1 : 20
+# 2 : 30
+
+fruits = ["apple", "banana", "cherry"]
+
+if "banana" in fruits:
+    print("banana is in the list")
+else:
+    print("banana is not in the list")
+
+# Output: banana is in the list
+
+numbers = [5, 2, 9, 1]
+
+# Sort ascending
+numbers.sort()
+print(numbers)  # [1, 2, 5, 9]
+
+# Sort descending
+numbers.sort(reverse=True)
+print(numbers)  # [9, 5, 2, 1]
+
+Activity 11: Copy List
+list1 = ["a", "b", "c"]
+# Create a copy of list1 into list2
+list1 = ["a", "b", "c"]
+# Option 1: slice (most common)
+list2 = list1[:]
+# Option 2: list() constructor
+list2 = list(list1)
+# Option 3: copy() method
+list2 = list1.copy()
+# Option 4: deepcopy (for nested lists)
+import copy
+list2 = copy.deepcopy(list1)
+
